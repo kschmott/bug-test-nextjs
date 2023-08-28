@@ -1,10 +1,10 @@
 import Link from "next/link";
 import React from "react";
 
-function page() {
+function page({ params }: { params: any }) {
   return (
     <div>
-      test1<Link href={"/foo/test2"}>LINK</Link>
+      test1<Link href={"/" + params.test + "/test2"}>LINK</Link>
     </div>
   );
 }
